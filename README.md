@@ -7,7 +7,7 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 
 ## 🔎 Etapas do Projeto
 
-# Sprint 1 - 25/08 até 11/09
+# Sprint 1 - 25/08 até 04/09
 ### 1. Problema e Coleta de dados
 #### Definir claramente o problema que será tratado.
 **Hipóteses**:
@@ -26,8 +26,9 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 - Fração total: controlada principalmente por chuva, turbidez, vazão, operação hidráulica, transporte e ressuspensão de sedimentos.
 
 #### Coleta de dados
+- Realizada a partir de um fluxo de dados Gen2 armazenado em um datalake.
 
-# Sprint 2
+# Sprint 2 04/09 até 11/09
 ### 2. Descrição dos Dados
 Explicar a origem dos dados, suas variáveis principais e estrutura.
 
