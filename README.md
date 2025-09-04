@@ -9,8 +9,23 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 
 # Sprint 1 - 25/08 até 08/09
 ### 1. Problema
-- Definir claramente o problema que será tratado.
-- Coleta de dados
+#### Definir claramente o problema que será tratado.
+  Hipóteses:
+A turbidez está positivamente correlacionada com a concentração de metais (maior turbidez → maior concentração).
+Períodos chuvosos apresentam concentrações médias mais elevadas de metais em comparação com a estiagem.
+A influência da vazão na concentração de metais diminui ao longo do Rio Paraopeba.
+(opcional, mais ligado ao ML): Modelos de machine learning (ex.: Random Forest, XGBoost, GAM) que considerem variáveis espaço-temporais (lags, sazonalidade, distância) apresentam melhor desempenho na predição da concentração de metais do que modelos lineares simples.
+Concentrações mais baixas de oxigênio dissolvido estão associadas a maiores concentrações de ferro e manganês, devido à redução de minerais em condições anóxicas.
+👉 Fundamentação: em ambientes com baixo OD, Fe e Mn podem ser liberados dos sedimentos por processos redutivos.
+A variação do oxigênio dissolvido ao longo da profundidade está associada à redistribuição de metais dissolvidos (gradiente vertical de OD → diferença na mobilidade de Al, Fe e Mn).
+👉 Isso conecta OD (superfície x fundo) com dinâmica redox.
+A interação entre temperatura da água e oxigênio dissolvido modula a concentração de metais (maior temperatura → menor OD → possível aumento da disponibilidade de Fe/Mn).
+Condições ácidas aumentam a solubilidade dos metais.
+Alterações rápidas de nível e vazão ressuspendem sedimentos ricos em metais
+Fração dissolvida: controlada principalmente por pH, OD, ORP, temperatura, processos redox.
+Fração total: controlada principalmente por chuva, turbidez, vazão, operação hidráulica, transporte e ressuspensão de sedimentos.
+
+#### Coleta de dados
 
 # Sprint 2
 ### 2. Descrição dos Dados
