@@ -10,7 +10,7 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 # Sprint 1 - 25/08 até 04/09
 ### 1. Problema e Coleta de dados
 #### Definir claramente o problema que será tratado.
-
+- Conferir premissas – Seção 3, Sprint 2
 
 #### Coleta de dados
 - Realizada a partir de um fluxo de dados Gen2 armazenado em um datalake.
