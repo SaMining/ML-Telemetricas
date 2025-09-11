@@ -88,7 +88,10 @@ Sugestões de melhorias, continuidade do projeto e trabalhos futuros.
 ---
 
 ## Contato
-- [@Digital BI](mailto:digital.bi@arcadis.com)
+- [@Aika Miura](mailto:aika.miura@arcadis.com)
+- [@Arthur Ricardo](mailto:arthur.ricardo@arcadis.com)
+- [@Gabriella Oliveira](mailto:gabriella.oliveira@arcadis.com)
+- [@Karina Silva](mailto:karina.santos@arcadis.com)
 
 
 © Arcadis
