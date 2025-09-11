@@ -17,8 +17,8 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 
 # Sprint 2 04/09 até 11/09
 ### 2. Descrição dos Dados
-**Estações selecionadas**: "AUT-MG050", "AUT-CPM_Ativa", "AUT-MPT-P7", "AUT-MRB01-PT19" - São as mesmas estações utilizadas no plano de contingência.
-**Variáveis selecionadas**: 'Alimentação', 'Condutividade', 'ORP', 'Oxigênio dissolvido', 'Temperatura', 'Turbidez', 'pH - apenas variáveis com menos de 15% de NAs (valores em brancos), foram selecionadas para dar seguimento ao modelo.
+- **Estações selecionadas**: "AUT-MG050", "AUT-CPM_Ativa", "AUT-MPT-P7", "AUT-MRB01-PT19" - São as mesmas estações utilizadas no plano de contingência.
+- **Variáveis selecionadas**: 'Alimentação', 'Condutividade', 'ORP', 'Oxigênio dissolvido', 'Temperatura', 'Turbidez', 'pH - apenas variáveis com menos de 15% de NAs (valores em brancos), foram selecionadas para dar seguimento ao modelo.
 
 ### 3. Premissas
 **Hipóteses**:
