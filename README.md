@@ -16,25 +16,65 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 - Realizada a partir de um fluxo de dados Gen2 armazenado em um datalake.
 
 # Sprint 2 04/09 até 11/09
-### 2. Descrição dos Dados
-- **Estações selecionadas**: "AUT-MG050", "AUT-CPM_Ativa", "AUT-MPT-P7", "AUT-MRB01-PT19" - São as mesmas estações utilizadas no plano de contingência.
-- **Variáveis selecionadas**: 'Alimentação', 'Condutividade', 'ORP', 'Oxigênio dissolvido', 'Temperatura', 'Turbidez', 'pH - apenas variáveis com menos de 15% de NAs (valores em brancos), foram selecionadas para dar seguimento ao modelo.
+### 2. 📊 Descrição dos Dados
+As análises foram realizadas a partir de um conjunto de estações de monitoramento previamente definidas:  
+- **AUT-MG050**  
+- **AUT-CPM_Ativa**  
+- **AUT-MPT-P7**  
+- **AUT-MRB01-PT19**  
+
+> Essas estações correspondem às mesmas utilizadas no **Plano de Contingência**.  
+
+As variáveis selecionadas foram aquelas com **menos de 15% de valores ausentes (NAs)**, garantindo melhor qualidade e consistência para o modelo.  
+
+### 📌 Variáveis Selecionadas  
+
+| Variável              | Descrição                                                                 |
+|------------------------|---------------------------------------------------------------------------|
+| **Alimentação**        | Taxa de entrada de energia ou nutrientes para o sistema monitorado.       |
+| **Condutividade**      | Capacidade da água de conduzir corrente elétrica (indicador de sais).     |
+| **ORP** (Potencial de Redox) | Mede o potencial de oxirredução da água, associado à qualidade química. |
+| **Oxigênio dissolvido**| Concentração de oxigênio disponível para organismos aquáticos.            |
+| **Temperatura**        | Temperatura da água, fator que influencia processos físicos e biológicos.|
+| **Turbidez**           | Grau de dispersão da luz causado por partículas em suspensão na água.     |
+| **pH**                 | Medida da acidez ou alcalinidade da água.                                |
 
 ### 3. Premissas
-**Hipóteses**:
-- A turbidez está positivamente correlacionada com a concentração de metais (maior turbidez → maior concentração).
-- Períodos chuvosos apresentam concentrações médias mais elevadas de metais em comparação com a estiagem.
-- A influência da vazão na concentração de metais diminui ao longo do Rio Paraopeba.
-(opcional, mais ligado ao ML): Modelos de machine learning (ex.: Random Forest, XGBoost, GAM) que considerem variáveis espaço-temporais (lags, sazonalidade, distância) apresentam melhor desempenho na predição da concentração de metais do que modelos lineares simples.
-- Concentrações mais baixas de oxigênio dissolvido estão associadas a maiores concentrações de ferro e manganês, devido à redução de minerais em condições anóxicas.
-👉 Fundamentação: em ambientes com baixo OD, Fe e Mn podem ser liberados dos sedimentos por processos redutivos.
-- A variação do oxigênio dissolvido ao longo da profundidade está associada à redistribuição de metais dissolvidos (gradiente vertical de OD → diferença na mobilidade de Al, Fe e Mn).
-👉 Isso conecta OD (superfície x fundo) com dinâmica redox.
-- A interação entre temperatura da água e oxigênio dissolvido modula a concentração de metais (maior temperatura → menor OD → possível aumento da disponibilidade de Fe/Mn).
-- Condições ácidas aumentam a solubilidade dos metais.
-- Alterações rápidas de nível e vazão ressuspendem sedimentos ricos em metais
-- Fração dissolvida: controlada principalmente por pH, OD, ORP, temperatura, processos redox.
-- Fração total: controlada principalmente por chuva, turbidez, vazão, operação hidráulica, transporte e ressuspensão de sedimentos.
+**🔎Hipóteses**:
+
+As hipóteses a seguir buscam explicar os fatores que controlam a dinâmica de metais no Rio Paraopeba, considerando tanto variáveis físico-químicas quanto hidrológicas.  
+
+### 1. Relações entre turbidez e metais  
+- A **turbidez** está positivamente correlacionada com a concentração de metais.  
+  > Maior turbidez → maior concentração de metais em suspensão.  
+
+### 2. Sazonalidade (chuva x estiagem)  
+- **Períodos chuvosos** apresentam concentrações médias mais elevadas de metais em comparação com períodos de estiagem.  
+- Alterações rápidas de **nível e vazão** ressuspendem sedimentos ricos em metais.  
+
+### 3. Vazão e dinâmica longitudinal  
+- A influência da **vazão** sobre a concentração de metais **diminui ao longo do Rio Paraopeba**.  
+
+### 4. Oxigênio dissolvido (OD) e processos redox  
+- **Baixas concentrações de OD** estão associadas a maiores concentrações de ferro e manganês, devido à **redução de minerais em condições anóxicas**.  
+  > Fundamentação: em ambientes com baixo OD, Fe e Mn podem ser liberados dos sedimentos por processos redutivos.  
+
+- A **variação vertical de OD** (superfície x fundo) está associada à redistribuição de metais dissolvidos, conectando gradientes de OD à **dinâmica redox**.  
+
+- A **interação entre temperatura e OD** modula a concentração de metais:  
+  > Maior temperatura → menor OD → possível aumento da disponibilidade de Fe/Mn.  
+
+### 5. Influência do pH  
+- **Condições ácidas** aumentam a solubilidade dos metais.  
+
+### 6. Frações de metais  
+- **Fração dissolvida**: controlada principalmente por pH, OD, ORP, temperatura e processos redox.  
+- **Fração total**: controlada principalmente por chuva, turbidez, vazão, operação hidráulica e ressuspensão de sedimentos.  
+
+### 7. Hipótese opcional (abordagem em ML)  
+- Modelos de **machine learning** (ex.: Random Forest, XGBoost, GAM) que considerem variáveis espaço-temporais  
+  (lags, sazonalidade, distância) apresentam **melhor desempenho preditivo** para concentrações de metais do que modelos lineares simples.  
+
 
 # Sprint 3 11/09 até 18/09
 ### 4. Planejamento da Solução
