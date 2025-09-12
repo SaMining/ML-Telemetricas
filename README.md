@@ -1,7 +1,15 @@
 # 🤖🌟 Machine Learning - Model Telemétricas
 
-## 📖 Descrição
-Este repositório contém o desenvolvimento de um projeto de aprendizado de máquina, desde a definição do problema até a análise dos resultados.
+## 📖 Descrição  
+
+Este repositório reúne o desenvolvimento de um projeto de **aprendizado de máquina**, cobrindo todas as etapas do ciclo de análise de dados:  
+
+- Definição e contextualização do problema  
+- Preparação e exploração dos dados  
+- Modelagem e avaliação de algoritmos  
+- Interpretação dos resultados e geração de insights  
+
+O objetivo é documentar de forma estruturada todo o processo, permitindo **reprodutibilidade**, **transparência** e **aprendizado contínuo**.  
 
 ---
 
