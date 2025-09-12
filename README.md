@@ -7,13 +7,17 @@ Este repositório contém o desenvolvimento de um projeto de aprendizado de máq
 
 ## 🔎 Etapas do Projeto
 
-# Sprint 1 - 25/08 até 04/09
-### 1. Problema e Coleta de dados
-#### Definir claramente o problema que será tratado.
-- Conferir premissas – Seção 3, Sprint 2
+# 🚀 Sprint 1 — 25/08 até 04/09  
 
-#### Coleta de dados
-- Realizada a partir de um fluxo de dados Gen2 armazenado em um datalake.
+## 1. Problema e Coleta de Dados  
+
+### 📝 Definição do Problema  
+- Delimitar claramente o problema a ser tratado nesta fase.  
+- Validar **premissas** definidas na **Seção 3 (Sprint 2)**, garantindo consistência para as etapas seguintes.  
+
+### 📥 Coleta de Dados  
+- A coleta foi realizada a partir de um **fluxo de dados Gen2** integrado ao **datalake** corporativo.  
+- Essa abordagem garante **escalabilidade**, **governança** e **atualização automática** dos dados utilizados no projeto.  
 
 # Sprint 2 04/09 até 11/09
 ### 2. 📊 Descrição dos Dados
