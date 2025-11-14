@@ -2,14 +2,17 @@
 
 ## 📖 Descrição  
 
-Este repositório reúne o desenvolvimento de um projeto de **aprendizado de máquina**, cobrindo todas as etapas do ciclo de análise de dados:  
+### Previsão de Metais Totais na Água
 
-- Definição e contextualização do problema  
-- Preparação e exploração dos dados  
-- Modelagem e avaliação de algoritmos  
-- Interpretação dos resultados e geração de insights  
+Este repositório apresenta um projeto de aprendizado de máquina para **prever concentrações de metais totais** (Alumínio, Manganês, Chumbo) a partir de **dados telemétricos em tempo real**, como Turbidez, pH, Condutividade, Temperatura e Oxigênio Dissolvido, considerando também o período sazonal (chuva e estiagem).
 
-O objetivo é documentar de forma estruturada todo o processo, permitindo **reprodutibilidade**, **transparência** e **aprendizado contínuo**.  
+### Principais etapas do projeto
+- Coleta e preparação de dados telemétricos e laboratoriais
+- Desenvolvimento de modelos preditivos para estimativa de metais totais
+- Avaliação da precisão dos modelos e análise dos resultados
+- Geração de insights para monitoramento preditivo e suporte à gestão ambiental
+
+O objetivo é documentar todo o processo, garantindo **transparência, reprodutibilidade** e suporte à **tomada de decisão ambiental**.
 
 ---
 
@@ -18,10 +21,6 @@ O objetivo é documentar de forma estruturada todo o processo, permitindo **repr
 # 🚀 Sprint 1 — 25/08 até 04/09  
 
 ## 1. Problema e Coleta de Dados  
-
-### 📝 Definição do Problema  
-- Delimitar claramente o problema a ser tratado nesta fase.  
-- Validar **premissas** definidas na **Seção 3 (Sprint 2)**, garantindo consistência para as etapas seguintes.  
 
 ### 📥 Coleta de Dados  
 - A coleta foi realizada a partir de um **fluxo de dados Gen2** integrado ao **datalake** corporativo.  
@@ -95,10 +94,11 @@ As hipóteses a seguir buscam explicar os fatores que controlam a dinâmica de m
 - **Exploratory Data Analysis (EDA)**: Exploração inicial para obter insights e identificar variáveis relevantes.  
 - **Preparação de Dados**: Normalização, reescalonamento, encoding e transformação de variáveis.  
 - **Seleção de Features**: Escolher das variáveis mais relevantes para o modelo.  
+- **Inclusão dos laboratoriais**: Incluir dados de metais totais para serem previstos  
 
-# Sprint 4
+# Sprint 4 18/09 até atual
 ### 5. Modelagem de Machine Learning
-- Treinar modelos: **KNN Classifier, Logistic Regression, ExtraTrees Classifier, XGBoost**  
+- Treinar modelos: **KNN Classifier, Logistic Regression, ExtraTrees Classifier, XGBoost, Redes neurais**  
 - Avaliação inicial: **Curva de ganho cumulativo, Lift, Precision@k, Recall@k**  
 
 # Sprint 5
@@ -130,7 +130,7 @@ Principais resultados quantitativos e qualitativos alcançados.
 ### 11. Conclusões
 Reflexão final sobre o projeto e resposta ao problema de negócio.  
 
-# Sprint 11
+# Sprint 11 - 31/12/2025
 ### 12. Documentação
 Ex: Python, Pandas, Scikit-Learn, XGBoost, Matplotlib, Seaborn, Jupyter Notebook 
 
