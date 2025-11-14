@@ -1,4 +1,4 @@
-# 🤖🌟 Machine Learning - Model Telemétricas
+# 🤖🌟 Modelagem Preditiva de Parâmetros Físico-Químicos Baseados em Dados Telemétricos
 
 ## 📖 Descrição  
 
